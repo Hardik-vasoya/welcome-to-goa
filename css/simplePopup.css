@@ -1,0 +1,59 @@
+/*
+** Simple Popup
+** PhPixel
+** http://www.phpixel.com/simple-popup/
+*/
+#sPopup-container{
+z-index: 9000;
+position: absolute;
+left: 0;
+top: 0;
+background: transparent url(../images/80.png) repeat;
+/*background: url(bg.png);*/
+width: 100%;
+height:100%;
+}
+#sPopup-popup{
+	width:697px;
+	height:803px;
+	margin: 10px auto;
+}
+#sPopup-close{
+float: right;
+width: 18px;
+height: 18px;
+display: block;
+background: url(close.png);
+cursor: pointer;
+margin-bottom: 15px;
+}
+#sPopup-close:hover{
+background: url(closehover.png);
+}
+.sPopup-content{
+display: none;
+background: #ccc;
+}
+
+/*new popup*/
+
+#SPopup-container{
+	position: absolute;
+    top: 2980px;
+    background: transparent url(../images/80.png) repeat;
+    z-index: 999;
+    /*width: 100%;*/
+}
+#SPopup-container img{
+	/*left: 350px;*/
+    position: relative;
+    z-index: 1000;
+    top: 130px;
+    width: auto;
+}
+
+@media only screen and (max-width: 767PX) {
+  #SPopup-container{
+  	top: 4280px;
+  }
+}

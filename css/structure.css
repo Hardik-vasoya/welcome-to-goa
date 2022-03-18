@@ -1,0 +1,670 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------------------Général */
+h1, h2, h3, h4, h5, h6, p 
+{
+	font-size: 1em;
+	margin: 0; padding: 0;
+	font-weight: normal;
+}
+
+ul {
+	margin: 0; padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration:none;
+	color:#e42122;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#e42122;
+}
+
+a img {
+	border: none;
+}
+
+.important {
+	color:#e42122;
+	font-weight:bold;
+}
+
+form, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*img {
+	display:block;
+	float:left;
+}*/
+
+/* ------------------------------ Structure --------------------------------------------- */
+
+#sPopup-popup { max-width: 697px !important; width: 100% !important; }
+
+body {
+	margin:0px;
+	padding:0px;
+	border:0;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:12px;
+	color:#000000;
+	line-height:16px;
+	overflow-x: hidden;
+}
+
+#header {
+	display:block;
+	position: relative;
+	width:1020px;
+	height:160px;
+	margin: 0 auto;
+}
+
+#bandeau{
+	display:block;
+	float:left;
+	width:1000px;
+	height:160px;
+}
+
+#logo {
+	display:block;
+	float:left;
+	width:177px;
+	height:147px;
+	margin-left:17px;
+	margin-top:12px;
+}
+
+#bandeauban {
+	display:block;
+	float:left;
+	width:700px;
+	height:135px;
+	margin-left:44px;
+	margin-top:12px;
+}
+
+#principale-container {
+	display:block;
+	position:relative;
+	width:1000px;
+	margin: 0 auto;
+	text-align:justify;
+}
+
+#principale {
+	display:block;
+	float:left;
+	width:1000px;
+	background:#FFF;
+}
+
+
+.gauche {
+	display:block;
+	float:left;
+	width:680px;
+	margin-left:12px;
+}
+
+.droite {
+	display:block;
+	float:left;
+	width:280px;
+	margin-left:12px;
+}
+
+
+#bas {
+	display:block;
+	float:left;
+	width:1000px;
+}
+
+.eat {
+	color:#FE5D02;
+}
+.explore {
+	color:#00fbfb;
+}
+.miscellaneous {
+	color:#54d517;
+}
+.party {
+	color:#ff0069;
+}
+.shop {
+	color:#ffdd14;
+}
+.sleep, .stay {
+	color:#c650ff;
+}
+.wellbeing, .wellness {
+	color:#afff0d;
+}
+
+
+/* ---------------------------------------- Menu ---------------------------------------- */
+#menu-container {
+	height:54px;
+}
+#menu-content {
+	width:100%;
+	height:54px;
+	background:#000;
+	z-index:1000;
+	box-shadow: 1px 1px 3px #555;
+	-moz-box-shadow: 1px 1px 3px #555;
+  	-webkit-box-shadow: 1px 1px 3px #555;
+}
+#menu {
+	position: relative;
+	width: 1000px;
+	height:54px;
+	margin: 0 auto;
+}
+
+
+#principal-menu, #principal-menu li
+{
+	display:block;
+	float:left;
+}
+
+#menu-home, #menu-goa, #menu-places, #menu-events
+{
+	display:block;
+	float:left;
+	padding:19px;
+	font-size:18px;
+	color:#FFF;
+	text-align:center;
+}
+#menu-thewug
+{
+	display:block;
+	float:left;
+	width:27px;
+	height:26px;
+	margin-top:13px;
+	margin-left:20px;
+}
+#ssmenu-thewug li a {
+	color:#FFF;
+	padding:5px;	
+}
+#ssmenu-thewug li a:hover {
+	color:#000;
+}
+
+/********** COULEUR DES LIENS MENUS ************************/
+#principal-menu li a#menu-home:hover, #principal-menu li a#menu-home.in
+{
+	color:#000;
+}
+#principal-menu li a#menu-goa:hover, #principal-menu li a#menu-goa.in
+{
+	color:#000;
+}
+#principal-menu li a#menu-events:hover, #principal-menu li a#menu-events.in
+{
+	color:#000;
+}
+#principal-menu li a#menu-places:hover, #principal-menu li a#menu-places.in
+{
+	color:#000;
+}
+
+/* ------------------------------ Titres de sous-menu --------------------- */
+.ssmenu li .thome, .ssmenu li .tthewug, .ssmenu li .tgoa, .ssmenu li .texplore, .ssmenu li .tmiscellaneous, 
+.ssmenu li .tparty, .ssmenu li .tstay, .ssmenu li .teat, .ssmenu li .tshop, .ssmenu li .twellness, .ssmenu li .tevents, .ssmenu li .tgallery
+{
+	display:block;
+	float:left;
+	height:31px;
+	line-height:31px;
+	padding:4px;
+	font-size:18px;
+}
+a#goa-goa {
+	width:85px;
+	background:url(../images/picto-goa.png) no-repeat 55px 4px;
+}
+a#goa-explore {
+	width:140px;
+	background:url(../images/picto-goa.png) no-repeat 110px 4px;
+}
+a#goa-miscellaneous {
+	width:210px;	
+	background:url(../images/picto-miscellaneous.png) no-repeat 180px 4px;
+}
+a#places-party {
+	width:110px;
+	background:url(../images/picto-party.png) no-repeat 80px 4px;
+}
+a#places-stay {
+	width:100px;
+	background:url(../images/picto-stay.png) no-repeat 64px 4px;
+}
+a#places-eat {
+	width:85px;
+	background:url(../images/picto-eat.png) no-repeat 51px 4px;
+}
+a#places-shop {
+	width:100px;
+	background:url(../images/picto-shop.png) no-repeat 68px 4px;
+}
+a#places-wellness {
+	width:150px;
+	background:url(../images/picto-wellness.png) no-repeat 118px 4px;
+}
+
+
+/* ------------------------------ SSMenu ---------------------------------- */
+.ssmenu
+{
+	position:absolute;
+	visibility:hidden;
+	z-index:20;
+	width:966px;
+	padding:17px;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+.ssmenu span
+{
+	display:block;
+	float:left;
+	width:960px;
+	font-size:20px;
+	line-height:20px;
+	text-indent:15px;
+	margin-bottom:20px;
+}
+.ssmenu li
+{
+	clear:both;
+	display:block;
+	float:left;
+}
+.ssmenu li a
+{
+	display:block;
+	float:left;
+	padding:4px;
+	font-size:15px;
+	color:#FFF;
+}
+
+/************** couleurs par rubrique *****************************/
+/**** home *******/
+a#places-party.thome:hover { background:url(../images/picto-party.png) #ff0000 no-repeat 80px 4px;}
+a#goa-goa.thome:hover {background:url(../images/picto-goa.png) #ff0000 no-repeat 55px 4px;}
+a#goa-explore.thome:hover {background:url(../images/picto-goa.png) #ff0000 no-repeat 110px 4px;}
+a#goa-miscellaneous.thome:hover {background:url(../images/picto-miscellaneous.png) #ff0000 no-repeat 180px 4px;}
+a#places-party.thome:hover {background:url(../images/picto-party.png) #ff0000 no-repeat 80px 4px;}
+a#places-stay.thome:hover {background:url(../images/picto-stay.png) #ff0000 no-repeat 64px 4px;}
+a#places-eat.thome:hover {background:url(../images/picto-eat.png) #ff0000 no-repeat 51px 4px;}
+a#places-shop.thome:hover {background:url(../images/picto-shop.png) #ff0000 no-repeat 68px 4px;}
+a#places-wellness.thome:hover {background:url(../images/picto-wellness.png) #ff0000 no-repeat 118px 4px;}
+.pucehome { background:url(../images/puce-home.png) no-repeat;}
+.home, .ssmenu li .thome {
+	color:#ff0000;
+}
+.mhome a:hover, .mhome a.in, .ssmhome a:hover, .ssmhome a.in {
+	background-color:#ff0000;
+	color:#000;
+}
+/**** thewug *******/
+a#places-party.tthewug:hover { background:url(../images/picto-party.png) #ff0033 no-repeat 80px 4px;}
+a#goa-goa.tthewug:hover {background:url(../images/picto-goa.png) #ff0033 no-repeat 55px 4px;}
+a#goa-explore.tthewug:hover {background:url(../images/picto-goa.png) #ff0033 no-repeat 110px 4px;}
+a#goa-miscellaneous.tthewug:hover {background:url(../images/picto-miscellaneous.png) #ff0033 no-repeat 180px 4px;}
+a#places-party.tthewug:hover {background:url(../images/picto-party.png) #ff0033 no-repeat 80px 4px;}
+a#places-stay.tthewug:hover {background:url(../images/picto-stay.png) #ff0033 no-repeat 64px 4px;}
+a#places-eat.tthewug:hover {background:url(../images/picto-eat.png) #ff0033 no-repeat 51px 4px;}
+a#places-shop.tthewug:hover {background:url(../images/picto-shop.png) #ff0033 no-repeat 68px 4px;}
+a#places-wellness.tthewug:hover {background:url(../images/picto-wellness.png) #ff0033 no-repeat 118px 4px;}
+.pucethewug { background:url(../images/puce-thewug.png) no-repeat;}
+.thewug, .ssmenu li .tthewug {
+	color:#ff0033;
+}
+.mthewug a:hover, .mthewug a.in, .ssmthewug a:hover, .ssmthewug a.in {
+	background-color:#ff0033;
+	color:#000;
+}
+/**** goa *******/
+a#places-party.tgoa:hover {background:url(../images/picto-party.png) #867df7 no-repeat 80px 4px;}
+a#goa-goa.tgoa:hover {background:url(../images/picto-goa.png) #867df7 no-repeat 55px 4px;}
+a#goa-explore.tgoa:hover {background:url(../images/picto-goa.png) #867df7 no-repeat 110px 4px;}
+a#goa-miscellaneous.tgoa:hover {background:url(../images/picto-miscellaneous.png) #867df7 no-repeat 180px 4px;}
+a#places-party.tgoa:hover {background:url(../images/picto-party.png) #867df7 no-repeat 80px 4px;}
+a#places-stay.tgoa:hover {background:url(../images/picto-stay.png) #867df7 no-repeat 64px 4px;}
+a#places-eat.tgoa:hover {background:url(../images/picto-eat.png) #867df7 no-repeat 51px 4px;}
+a#places-shop.tgoa:hover {background:url(../images/picto-shop.png) #867df7 no-repeat 68px 4px;}
+a#places-wellness.tgoa:hover {background:url(../images/picto-wellness.png) #867df7 no-repeat 118px 4px;}
+.pucegoa {background:url(../images/puce-goa.png) no-repeat;	}
+.goa, .ssmenu li .tgoa {
+	color:#867df7;
+}
+.mgoa a:hover, .mgoa a.in, .ssmgoa a:hover, .ssmgoa a.in {
+	background-color:#867df7;
+	color:#000;
+}
+/**** events *******/
+a#places-party.tevents:hover {background:url(../images/picto-party.png) #ff0069 no-repeat 80px 4px;}
+a#goa-goa.tevents:hover {background:url(../images/picto-goa.png) #ff0069 no-repeat 55px 4px;}
+a#goa-explore.tevents:hover {background:url(../images/picto-goa.png) #ff0069 no-repeat 110px 4px;}
+a#goa-miscellaneous.tevents:hover {background:url(../images/picto-miscellaneous.png) #ff0069 no-repeat 180px 4px;}
+a#places-party.tevents:hover {background:url(../images/picto-party.png) #ff0069 no-repeat 80px 4px;}
+a#places-stay.tevents:hover {background:url(../images/picto-stay.png) #ff0069 no-repeat 64px 4px;}
+a#places-eat.tevents:hover {background:url(../images/picto-eat.png) #ff0069 no-repeat 51px 4px;}
+a#places-shop.tevents:hover {background:url(../images/picto-shop.png) #ff0069 no-repeat 68px 4px;}
+a#places-wellness.tevents:hover {background:url(../images/picto-wellness.png) #ff0069 no-repeat 118px 4px;}
+.puceevents {background:url(../images/puce-events.png) no-repeat;	}
+.events, .ssmenu li .tevents {
+	color:#ff0069;
+}
+.mevents a:hover, .mevents a.in, .ssmevents a:hover, .ssmevents a.in {
+	background-color:#ff0069;
+	color:#000;
+}
+/**** party *******/
+a#places-party.tparty:hover {background:url(../images/picto-party.png) #ff0069 no-repeat 80px 4px;}
+a#goa-goa.tparty:hover {background:url(../images/picto-goa.png) #ff0069 no-repeat 55px 4px;}
+a#goa-explore.tparty:hover {background:url(../images/picto-goa.png) #ff0069 no-repeat 110px 4px;}
+a#goa-miscellaneous.tparty:hover {background:url(../images/picto-miscellaneous.png) #ff0069 no-repeat 180px 4px;}
+a#places-party.tparty:hover {background:url(../images/picto-party.png) #ff0069 no-repeat 80px 4px;}
+a#places-stay.tparty:hover {background:url(../images/picto-stay.png) #ff0069 no-repeat 64px 4px;}
+a#places-eat.tparty:hover {background:url(../images/picto-eat.png) #ff0069 no-repeat 51px 4px;}
+a#places-shop.tparty:hover {background:url(../images/picto-shop.png) #ff0069 no-repeat 68px 4px;}
+a#places-wellness.tparty:hover {background:url(../images/picto-wellness.png) #ff0069 no-repeat 118px 4px;}
+.puceparty {background:url(../images/puce-party.png) no-repeat;	}
+.party, .ssmenu li .tparty {
+	color:#ff0069;
+}
+.mparty a:hover, .mparty a.in, .ssmparty a:hover, .ssmparty a.in {
+	background-color:#ff0069;
+	color:#000;
+}
+/**** stay *******/
+a#places-party.tstay:hover {background:url(../images/picto-party.png) #c650ff no-repeat 80px 4px;}
+a#goa-goa.tstay:hover {background:url(../images/picto-goa.png) #c650ff no-repeat 55px 4px;}
+a#goa-explore.tstay:hover {background:url(../images/picto-goa.png) #c650ff no-repeat 110px 4px;}
+a#goa-miscellaneous.tstay:hover {background:url(../images/picto-miscellaneous.png) #c650ff no-repeat 180px 4px;}
+a#places-party.tstay:hover {background:url(../images/picto-party.png) #c650ff no-repeat 80px 4px;}
+a#places-stay.tstay:hover {background:url(../images/picto-stay.png) #c650ff no-repeat 64px 4px;}
+a#places-eat.tstay:hover {background:url(../images/picto-eat.png) #c650ff no-repeat 51px 4px;}
+a#places-shop.tstay:hover {background:url(../images/picto-shop.png) #c650ff no-repeat 68px 4px;}
+a#places-wellness.tstay:hover {background:url(../images/picto-wellness.png) #c650ff no-repeat 118px 4px;}
+.pucestay {background:url(../images/puce-stay.png) no-repeat;	}
+.stay, .ssmenu li .tstay {
+	color:#c650ff;
+}
+.mstay a:hover, .mstay a.in, .ssmstay a:hover, .ssmstay a.in {
+	background-color:#c650ff;
+	color:#000;
+}
+/**** eat *******/
+a#places-party.teat:hover {background:url(../images/picto-party.png) #fd5d02 no-repeat 80px 4px;}
+a#goa-goa.teat:hover {background:url(../images/picto-goa.png) #fd5d02 no-repeat 55px 4px;}
+a#goa-explore.teat:hover {background:url(../images/picto-goa.png) #fd5d02 no-repeat 110px 4px;}
+a#goa-miscellaneous.teat:hover {background:url(../images/picto-miscellaneous.png) #fd5d02 no-repeat 180px 4px;}
+a#places-party.teat:hover {background:url(../images/picto-party.png) #fd5d02 no-repeat 80px 4px;}
+a#places-stay.teat:hover {background:url(../images/picto-stay.png) #fd5d02 no-repeat 64px 4px;}
+a#places-eat.teat:hover {background:url(../images/picto-eat.png) #fd5d02 no-repeat 51px 4px;}
+a#places-shop.teat:hover {background:url(../images/picto-shop.png) #fd5d02 no-repeat 68px 4px;}
+a#places-wellness.teat:hover {background:url(../images/picto-wellness.png) #fd5d02 no-repeat 118px 4px;}
+.puceeat {background:url(../images/puce-eat.png) no-repeat;	}
+.eat, .ssmenu li .teat {
+	color:#fd5d02;
+}
+.meat a:hover, .meat a.in, .ssmeat a:hover, .ssmeat a.in {
+	background-color:#fd5d02;
+	color:#000;
+}
+/**** shop *******/
+a#places-party.tshop:hover {background:url(../images/picto-party.png) #ffdd14 no-repeat 80px 4px;}
+a#goa-goa.tshop:hover {background:url(../images/picto-goa.png) #ffdd14 no-repeat 55px 4px;}
+a#goa-explore.tshop:hover {background:url(../images/picto-goa.png) #ffdd14 no-repeat 110px 4px;}
+a#goa-miscellaneous.tshop:hover {background:url(../images/picto-miscellaneous.png) #ffdd14 no-repeat 180px 4px;}
+a#places-party.tshop:hover {background:url(../images/picto-party.png) #ffdd14 no-repeat 80px 4px;}
+a#places-stay.tshop:hover {background:url(../images/picto-stay.png) #ffdd14 no-repeat 64px 4px;}
+a#places-eat.tshop:hover {background:url(../images/picto-eat.png) #ffdd14 no-repeat 51px 4px;}
+a#places-shop.tshop:hover {background:url(../images/picto-shop.png) #ffdd14 no-repeat 68px 4px;}
+a#places-wellness.tshop:hover {background:url(../images/picto-wellness.png) #ffdd14 no-repeat 118px 4px;}
+.puceshop {background:url(../images/puce-shop.png) no-repeat;	}
+.shop, .ssmenu li .tshop {
+	color:#ffdd14;
+}
+.mshop a:hover, .mshop a.in, .ssmshop a:hover, .ssmshop a.in {
+	background-color:#ffdd14;
+	color:#000;
+}
+/**** wellness *******/
+a#places-party.twellness:hover {background:url(../images/picto-party.png) #afff0d no-repeat 80px 4px;}
+a#goa-goa.twellness:hover {background:url(../images/picto-goa.png) #afff0d no-repeat 55px 4px;}
+a#goa-explore.twellness:hover {background:url(../images/picto-goa.png) #afff0d no-repeat 110px 4px;}
+a#goa-miscellaneous.twellness:hover {background:url(../images/picto-miscellaneous.png) #afff0d no-repeat 180px 4px;}
+a#places-party.twellness:hover {background:url(../images/picto-party.png) #afff0d no-repeat 80px 4px;}
+a#places-stay.twellness:hover {background:url(../images/picto-stay.png) #afff0d no-repeat 64px 4px;}
+a#places-eat.twellness:hover {background:url(../images/picto-eat.png) #afff0d no-repeat 51px 4px;}
+a#places-shop.twellness:hover {background:url(../images/picto-shop.png) #afff0d no-repeat 68px 4px;}
+a#places-wellness.twellness:hover {background:url(../images/picto-wellness.png) #afff0d no-repeat 118px 4px;}
+.pucewellness {background:url(../images/puce-wellness.png) no-repeat;}
+.wellness, .ssmenu li .twellness {
+	color:#afff0d;
+}
+.mwellness a:hover, .mwellness a.in, .ssmwellness a:hover, .ssmwellness a.in {
+	background-color:#afff0d;
+	color:#000;
+}
+/**** explore *******/
+a#places-party.texplore:hover {background:url(../images/picto-party.png) #00fbfb no-repeat 80px 4px;}
+a#goa-goa.texplore:hover {background:url(../images/picto-goa.png) #00fbfb no-repeat 55px 4px;}
+a#goa-explore.texplore:hover {background:url(../images/picto-goa.png) #00fbfb no-repeat 110px 4px;}
+a#goa-miscellaneous.texplore:hover {background:url(../images/picto-miscellaneous.png) #00fbfb no-repeat 180px 4px;}
+a#places-party.texplore:hover {background:url(../images/picto-party.png) #00fbfb no-repeat 80px 4px;}
+a#places-stay.texplore:hover {background:url(../images/picto-stay.png) #00fbfb no-repeat 64px 4px;}
+a#places-eat.texplore:hover {background:url(../images/picto-eat.png) #00fbfb no-repeat 51px 4px;}
+a#places-shop.texplore:hover {background:url(../images/picto-shop.png) #00fbfb no-repeat 68px 4px;}
+a#places-wellness.texplore:hover {background:url(../images/picto-wellness.png) #00fbfb no-repeat 118px 4px;}
+.puceexplore {background:url(../images/puce-explore.png) no-repeat;}
+.explore, .ssmenu li .texplore {
+	color:#00fbfb;
+}
+.mexplore a:hover, .mexplore a.in, .ssmexplore a:hover, .ssmexplore a.in {
+	background-color:#00fbfb;
+	color:#000;
+}
+/**** miscellaneous *******/
+a#places-party.tmiscellaneous:hover {background:url(../images/picto-party.png) #54d517 no-repeat 80px 4px;}
+a#goa-goa.tmiscellaneous:hover {background:url(../images/picto-goa.png) #54d517 no-repeat 55px 4px;}
+a#goa-explore.tmiscellaneous:hover {background:url(../images/picto-goa.png) #54d517 no-repeat 110px 4px;}
+a#goa-miscellaneous.tmiscellaneous:hover {background:url(../images/picto-miscellaneous.png) #54d517 no-repeat 180px 4px;}
+a#places-party.tmiscellaneous:hover {background:url(../images/picto-party.png) #54d517 no-repeat 80px 4px;}
+a#places-stay.tmiscellaneous:hover {background:url(../images/picto-stay.png) #54d517 no-repeat 64px 4px;}
+a#places-eat.tmiscellaneous:hover {background:url(../images/picto-eat.png) #54d517 no-repeat 51px 4px;}
+a#places-shop.tmiscellaneous:hover {background:url(../images/picto-shop.png) #54d517 no-repeat 68px 4px;}
+a#places-wellness.tmiscellaneous:hover {background:url(../images/picto-wellness.png) #54d517 no-repeat 118px 4px;}
+.pucemiscellaneous {background:url(../images/puce-miscellaneous.png) no-repeat;}
+.miscellaneous, .ssmenu li .tmiscellaneous {
+	color:#54d517;
+}
+.mmiscellaneous a:hover, .mmiscellaneous a.in, .ssmmiscellaneous a:hover, .ssmmiscellaneous a.in {
+	background-color:#54d517;
+	color:#000;
+}
+/**** gallery *******/
+a#places-party.tgallery:hover {background:url(../images/picto-party.png) #0033ff no-repeat 80px 4px;}
+a#goa-goa.tgallery:hover {background:url(../images/picto-goa.png) #0033ff no-repeat 55px 4px;}
+a#goa-explore.tgallery:hover {background:url(../images/picto-goa.png) #0033ff no-repeat 110px 4px;}
+a#goa-miscellaneous.tgallery:hover {background:url(../images/picto-miscellaneous.png) #0033ff no-repeat 180px 4px;}
+a#places-party.tgallery:hover {background:url(../images/picto-party.png) #0033ff no-repeat 80px 4px;}
+a#places-stay.tgallery:hover {background:url(../images/picto-stay.png) #0033ff no-repeat 64px 4px;}
+a#places-eat.tgallery:hover {background:url(../images/picto-eat.png) #0033ff no-repeat 51px 4px;}
+a#places-shop.tgallery:hover {background:url(../images/picto-shop.png) #0033ff no-repeat 68px 4px;}
+a#places-wellness.tgallery:hover {background:url(../images/picto-wellness.png) #0033ff no-repeat 118px 4px;}
+.pucegallery {background:url(../images/puce-gallery.png) no-repeat;}
+.gallery, .ssmenu li .tgallery {
+	color:#0033ff;
+}
+.mgallery a:hover, .mgallery a.in, .ssmgallery a:hover, .ssmgallery a.in {
+	background-color:#0033ff;
+	color:#000;
+}
+
+/*general*/
+.ssmenu li .thome:hover, .ssmenu li .tparty:hover, .ssmenu li .tgoa:hover, .ssmenu li .texplore:hover, .ssmenu li .tmiscellaneous:hover, .ssmenu li .tstay:hover, .ssmenu li .teat:hover, .ssmenu li .tshop:hover, .ssmenu li .twellness:hover, .ssmenu li .tevents:hover, .ssmenu li .tgallery:hover {
+	color:#000;
+}
+
+/*** bloc sousmenu */
+.ssmenu-liens {
+	display:block;
+	float:left;
+}
+
+/*** menu de droite (search, fb etc...) ***/
+#advancedsearch {
+	display:block;
+	float:left;
+	margin-left:30px;
+	margin-top:13px;
+	width:185px;
+	height:20px;
+}
+
+#advancedsearch #keyword
+{
+	display:block;
+	float:left;
+	width:150px;
+	height:22px;
+	border:1px solid #FFF;
+	padding-left: 3px;
+	padding-top:2px;
+	background:none;
+	color:#FFF;
+}
+
+#advancedsearch #tfbtn
+{
+	display:block;
+	float:left;
+	width:27px;
+	height:26px;
+	background:url(../images/msearch.gif) no-repeat;
+	border:none;
+	margin-left:2px;
+	margin-top:2px;
+	cursor:pointer;
+}
+
+#second-menu
+{
+	display:block;
+	float:right;
+	margin-top:17px;
+}
+#second-menu li
+{
+	display:block;
+	float:left;
+	padding:0px 8px 0px 8px;
+}
+
+#ssmenu-translate {
+	position:absolute;
+	visibility:hidden;
+	z-index:20;
+	width:185px;
+	padding:17px;
+	margin-left:781px;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow:hidden;
+}
+
+
+
+/* ---------------------------------------- Bloc Applis ---------------------------------------- */
+#bloc-applis {
+	display:block;
+	float:left;
+	width:280px;
+	margin-top:20px;
+	box-shadow: 1px 1px 3px #555;
+	-moz-box-shadow: 1px 1px 3px #555;
+  	-webkit-box-shadow: 1px 1px 3px #555;
+	background:#FFF;
+}
+#bloc-applis #appli {
+	display:block;
+	float:left;
+	width:265px;
+	margin:12px 0px 10px 5px;
+}
+#bloc-applis #appli H4 {
+	display:block;
+	float:left;
+	width:190px;
+	height:21px;
+	background:url(../images/app-title.gif) no-repeat;
+	text-indent:-9999px;
+}
+
+/* ------------------------------ Menu bas Footer --------------------------------------- */
+#footer
+{
+	display:block;
+	float:left;
+	width:800px;
+	height:20px;
+	margin-top:30px;
+	border-top:1px solid #808184;
+	text-align:center;
+	font-size:12px;
+	padding-left:200px;
+	padding-top:3px;
+}
+
+#ssfooter
+{
+	display:block;
+	float:left;
+	width:920px;
+	height:19px;
+	border-top:1px solid #808184;
+	text-align:center;
+	font-size:11px;
+	padding-top:1px;
+	padding-left:60px;
+	margin-left:10px;
+}
+
+#footer li, #ssfooter li
+{
+	float:left;
+	color:#808184;
+}
+
+#footer a, #ssfooter a
+{
+	color:#808184;
+	text-decoration:none;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+#footer a:hover, #footer a.in, #ssfooter a:hover, #ssfooter a.in
+{
+	text-decoration:underline;
+}
